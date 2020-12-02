@@ -6,10 +6,7 @@ const randMsg = {
         let rdNickIdx = Math.floor(Math.random() * this.nickname.length);
         let rdClothesIdx = Math.floor(Math.random() * this.clothes.length);
         let rdActIdx = Math.floor(Math.random() * this.activity.length);
-        let rdNickname = this.nickname[rdNickIdx];
-        let rdClothes = this.clothes[rdClothesIdx];
-        let rdActivity = this.activity[rdActIdx];
-        console.log(`Hello, ${rdNickname}! I say, what a lovely ${rdClothes} you've got there! Would you like to get together sometime and ${rdActivity}?`);
+        console.log(`Hello, ${this.nickname[rdNickIdx]}! I say, what a lovely ${this.clothes[rdClothesIdx]} you've got there! Would you like to get together sometime and ${this.activity[rdActIdx]}?`);
     }
 
 };
