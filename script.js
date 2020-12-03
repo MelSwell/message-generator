@@ -8,6 +8,10 @@ const randMsg = {
         let rdAdjIdx = Math.floor(Math.random() * this.adjective.length);
         let rdClothesIdx = Math.floor(Math.random() * this.clothes.length);
         let rdActIdx = Math.floor(Math.random() * this.activity.length);
+        if(rdNickIdx === 4){
+            rdAdjIdx = 6
+            rdClothesIdx = 4
+        }
         console.log(`Hello, ${this.nickname[rdNickIdx]}!`); 
         console.log(`I say, what a ${this.adjective[rdAdjIdx]} ${this.clothes[rdClothesIdx]} you've got there!`); 
         console.log(`Would you like to get together sometime and ${this.activity[rdActIdx]}?`);
